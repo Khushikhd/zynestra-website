@@ -1,0 +1,15 @@
+:root {
+  /* Brand Palette (Zomato alternate inspired) */
+  --primary-color: #FF5A36;        /* Bold Orange-Red */
+  --secondary-color: #1A2D4D;      /* Deep Navy */
+  --light-bg: #F9F8F6;             /* Warm Off-White */
+  --dark-text: #343A40;            /* Charcoal */
+  --highlight-color: #FFC857;      /* Gold Accent */
+
+  /* Utility */
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+}

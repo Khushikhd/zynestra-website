@@ -1,0 +1,233 @@
+/* ---------------- Global ---------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 70px 0 0 0; /* adjust for fixed navbar */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #f7f9fc;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 0;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ff512f !important;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff512f !important;
+  transform: scale(1.1);
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  opacity: 0.3;
+  z-index: 1;
+  animation: moveBG 30s linear infinite;
+}
+
+@keyframes moveBG {
+  0% {background-position: 0 0;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0 100%;}
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s 0.5s forwards;
+}
+
+.hero-section .btn-primary {
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+.hero-section .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ---------------- Section Headings ---------------- */
+section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #ff512f;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ---------------- Cards ---------------- */
+.card {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.card h5, .card h4 {
+  color: #ff512f;
+}
+.hover-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn-primary {
+  background-color: #ff512f;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #dd2476;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.btn-outline-primary {
+  border: 2px solid #ff512f;
+  color: #ff512f;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background-color: #ff512f;
+  color: #fff;
+}
+
+/* ---------------- Contact Form ---------------- */
+form .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+form .form-control:focus {
+  border-color: #ff512f;
+  box-shadow: 0 0 8px rgba(255,81,47,0.3);
+}
+form .btn:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #fff;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeInUp {
+  from {opacity:0; transform:translateY(30px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px){
+  .hero-section h1 {font-size: 2rem;}
+  .hero-section p {font-size: 1rem;}
+}
+/* ---------------- Fade-in animation for headings ---------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Optional: delay for paragraph below the heading */
+.fade-in + p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s 0.5s forwards;
+}
+
+/* Keyframes already exist: */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
