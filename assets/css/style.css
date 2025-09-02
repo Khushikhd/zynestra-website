@@ -688,7 +688,7 @@ h2.section-title::after {
     background-color: #ffffffd9 !important;  
     z-index: 333350;                      
     padding: 15px 20px;    
-    margin-left: -10px;             
+    margin-inline: -10px;             
     box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
   }
 

@@ -16,14 +16,14 @@
 
     /* Navbar */
     .navbar {
-      background: #fff;
+      background: #bab9b9;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      padding: 12px 40px;
+      padding: 12px 20px;
       z-index: 100;
       position: relative;
     }
     .navbar-brand { font-weight: 700; color: #e63946; }
-    .navbar-nav .nav-link { margin-left: 20px; color: #444; font-weight: 500; }
+    .navbar-nav .nav-link { margin-left: 5px; color: #444; font-weight: 500; }
     .navbar-nav .nav-link:hover,
     .navbar-nav .nav-link.active { color: #e63946; }
 
@@ -136,11 +136,20 @@
     }
     footer a { color: #e63946; margin: 0 8px; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+@media(max-width: 992px){
+  .contact-wrapper { 
+    flex-direction: column; 
+    padding: 20px; 
+  }
+  .contact-img { 
+    order: -1; 
+    margin-bottom: 20px; 
+  }
+  .contact-img img { 
+    max-width: 100%; 
+  }
+}
 
-    @media(max-width: 992px){
-      .contact-wrapper { flex-direction: column; padding: 20px; }
-      .contact-img img { max-width: 100%; }
-    }
   </style>
 </head>
 <body>
