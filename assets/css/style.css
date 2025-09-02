@@ -85,7 +85,121 @@ body {
   background: linear-gradient(135deg, #6f4e37, #d2b48c); /* coffee gradient */
 } 
 /* NAVBAR */
-.glass-nav {background: rgba(0,0,0,0.65); backdrop-filter: blur(8px);}
+.glass-nav {
+  background: #ffffff7d !important; /* solid white */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.navbar-nav .nav-link {
+  color: #333 !important; /* visible links */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0ea5a3 !important; /* highlight color */
+}
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Blurred background image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80")
+              no-repeat center center/cover;
+  filter: blur(3px);
+  z-index: 1;
+}
+
+/* Dark overlay for readability */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.194);
+  z-index: 2;
+}
+
+/* Hero content (text) */
+.hero .container {
+  position: relative;
+  z-index: 3;
+  padding: 0 15px;
+}
+
+/* Hero heading */
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.146);
+  margin: 0;
+  animation: heroFade 1.5s ease-in-out infinite alternate;
+}
+
+/* Hero subtitle */
+.hero p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #f0f0f0;
+  margin-top: 15px;
+  animation: heroFade 1.8s ease-in-out infinite alternate;
+}
+
+/* Floating shapes */
+.hero .bg-shape {
+  position: absolute;
+  opacity: 0.8;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+  transition: transform 1.5s ease;
+  z-index: 3;
+}
+.hero .bg-shape:hover { transform: scale(1.1) rotate(8deg); }
+
+/* placements */
+.hero .shape1 { top: 8%; left: -5%; width: 250px; animation: float 5s infinite ease-in-out; }
+.hero .shape2 { bottom: 5%; right: -10%; width: 280px; animation: float 18s infinite ease-in-out; }
+.hero .shape3 { top: 45%; right: 20%; width: 200px; animation: float 15s infinite ease-in-out; }
+
+/* floating animation */
+@keyframes float {
+  0%   {transform: translateY(0) rotate(-5deg);}
+  50%  {transform: translateY(-25px) rotate(10deg);}
+  100% {transform: translateY(0) rotate(-5deg);}
+}
+
+@keyframes heroFade {
+  0%   { transform: translateY(0) scale(1); opacity: 0.8; }
+  50%  { transform: translateY(-10px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.9; }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 991px) {
+  .hero h1 { font-size: 3rem; }
+  .hero p  { font-size: 1.2rem; }
+}
+
+@media (max-width: 575px) {
+  .hero { min-height: 70vh; }
+  .hero h1 { font-size: 2.2rem; letter-spacing: 1px; }
+  .hero p  { font-size: 1rem; }
+}
+
+
 /* HERO */
 .timeline-grid {
   display: grid;
@@ -233,53 +347,33 @@ h2.section-title::after {
   opacity: 1;
   transform: translateY(0);
 }
-.hero {
-  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80")
-              no-repeat center center/cover;
-  position: relative;
-  min-height: 83vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
 
-/* subtle dark overlay for text visibility */
-.hero::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: rgba(255,255,255,0.15); /* halka white glow */
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-/* floating abstract PNG shapes */
-.hero .bg-shape {
-  position: absolute;
-  opacity: 0.8;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
-  transition: transform 1.5s ease;
-  z-index: 2;
-}
-.hero .bg-shape:hover { transform: scale(1.1) rotate(8deg); }
-
-/* placements */
-.hero .shape1 { top: 8%; left: -5%; width: 250px; animation: float 5s infinite ease-in-out; }
-.hero .shape2 { bottom: 5%; right: -10%; width: 280px; animation: float 18s infinite ease-in-out; }
-.hero .shape3 { top: 45%; right: 20%; width: 200px; animation: float 15s infinite ease-in-out; }
-
-/* floating animation */
+/* foating animation */
 @keyframes float {
   0%   {transform: translateY(0) rotate(-5deg);}
   50%  {transform: translateY(-25px) rotate(10deg);}
   100% {transform: translateY(0) rotate(-5deg);}
 }
 
+/* MOBILE: Swap image and text in app section */
+@media (max-width: 767px) {
+  /* Row becomes column */
+  .py-5 > .container > .row.align-items-center {
+    flex-direction: column-reverse;
+    text-align: center; /* center text */
+  }
+
+  /* Make image responsive and smaller */
+  .app-image-wrapper {
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  /* Heading spacing */
+  .py-5 > .container > .row.align-items-center h2.section-title {
+    margin-top: 15px;
+  }
+}
 
 /* FLOATING BALLS BACKGROUND */
 .balls-bg {
