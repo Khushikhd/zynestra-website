@@ -54,6 +54,7 @@
 @keyframes fadeLeft{ to {opacity:1; transform:translateX(0);} }
 @keyframes fadeRight{ to {opacity:1; transform:translateX(0);} }
 @keyframes scaleIn { to {opacity:1; transform:scale(1);} }
+@keyframes rise {to{opacity:1; transform:translateY(0)}}
 @keyframes riseIn  { to {opacity:1; transform:translateY(0);} }
 @keyframes floatUp {
   0% {transform: translateY(0) scale(1); opacity: 0;}
