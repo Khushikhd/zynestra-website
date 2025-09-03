@@ -9,7 +9,6 @@
   50%  {transform: translateY(-25px) rotate(10deg);}
   100% {transform: translateY(0) rotate(-5deg);}
 }
-
 @keyframes heroFade {
   0%   { transform: translateY(0) scale(1); opacity: 0.8; }
   50%  { transform: translateY(-10px) scale(1.05); opacity: 1; }
@@ -18,12 +17,35 @@
 @media (max-width: 991px) {
   .hero h1 { font-size: 3rem; }
   .hero p  { font-size: 1.2rem; }
+    .navbar-collapse {
+    background-color: #ffffffd9 !important;  
+    z-index: 333350;                      
+    padding: 15px 20px;    
+    margin-inline: -10px;             
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+  .navbar-collapse .nav-link {
+    color: #333 !important;
+    font-weight: 600;
+  }
+   .timeline-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
-
 @media (max-width: 575px) {
   .hero { min-height: 70vh; }
   .hero h1 { font-size: 2.2rem; letter-spacing: 1px; }
   .hero p  { font-size: 1rem; }
+  .timeline-box {
+    min-height: auto;
+    padding: 25px 15px;
+  }
+  .timeline-img {
+    width: 80px;
+    height: 80px;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr; 
+  }
 }
 @keyframes underline {
   to { width: 60px; }
@@ -38,42 +60,6 @@
   25% {opacity: .6;}
   50% {opacity: .8;}
   100% {transform: translateY(-120vh) scale(1.2); opacity: 0;}
-}
-@keyframes underline {
-  to { width: 60px; }
-}
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background-color: #ffffffd9 !important;  
-    z-index: 333350;                      
-    padding: 15px 20px;    
-    margin-inline: -10px;             
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-  .navbar-collapse .nav-link {
-    color: #333 !important;
-    font-weight: 600;
-  }
-  }
-@media (max-width: 767px) {
-  .timeline-box {
-    min-height: auto;
-    padding: 25px 15px;
-  }
-
-  .timeline-img {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 991px) {
-  .timeline-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-@media (max-width: 575px) {
-  .timeline-grid {
-    grid-template-columns: 1fr; 
-  }
 }
 @media (max-width: 767px) {
   .py-5 > .container > .row.align-items-center {
