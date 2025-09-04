@@ -10,14 +10,6 @@
 </head>
 <body class="position-relative">
 
-  <!-- Floating bubbles background -->
-  <div class="balls-bg">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span>
-  </div>
-
   <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
   <div class="container d-flex align-items-center justify-content-between">
@@ -46,71 +38,60 @@
   </div>
 </nav>
 
-  <main class="pt-7 pb-5">
-    <div class="container">
+<main class="pt-7 pb-5">
+<div class="container founders-section text-center">
+  <div class="d-flex justify-content-center align-items-center gap-3 anim-fade-up">
+    <img src="assets/img/zengie app.jpeg" alt="Gengies Logo" class="app-logo anim-rise">
+    <h2 class="section-title m-0">Gengies</h2>
+  </div>
+</div>
 
-      <!-- Product Name -->
-      <h1 class="section-title text-center anim-fade-up">Gengies</h1>
-
-      <!-- Product Logo -->
-      <div class="text-center anim-rise delay-1 mb-4">
-        <img src="assets/img/zengie app.jpeg" alt="Gengies Logo" class="timeline-img mb-3" style="height:150px;width:150px;">
+    <!-- Founders -->
+    <section class="founders-section text-center">
+      <h2 class="section-title">Meet Our Founders</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5 founder-profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="founder-img" alt="Priyanshu">
+          <h4 class="founder-name">Priyanshu Chandra</h4>
+          <p class="role">Founder & CEO</p>
+          <p class="bio">Building people-first experiences combining healthcare with tech innovation. Experienced in scalable digital solutions for social impact.</p>
+        </div>
+        <div class="col-md-5 founder-profile">
+          <img src="assets/img/co-founder.png.jpeg" class="founder-img" alt="Allokik">
+          <h4 class="founder-name">Allokik Gupta</h4>
+          <p class="role">Co-Founder & COO</p>
+          <p class="bio">Operations, strategy & growth — turning vision into action. Expert in scaling products, enhancing UX, and building reliable teams.</p>
+        </div>
       </div>
+    </section>
 
-      <!-- About Product -->
-    <div class="product-info-grid">
-  <!-- About Box -->
-  <div class="product-box pop-out" style="background: linear-gradient(135deg, #6f4e37, #e4d2bb);">
-    <img src="assets/img/z img.png" alt="About Gengies" class="timeline-img mb-3">
-    <h5>About Gengies</h5>
-    <p>Gengies is a mobile-first social exploration app to discover local spots with verified companions — safe, social, and memorable.</p>
-  </div>
-
-  <!-- Key Features Box -->
-  <div class="product-box pop-out" style="background: linear-gradient(135deg, #a67dd3, #1f3d6cad);">
-    <img src="assets/img/bg2.jpeg" alt="Key Features" class="timeline-img mb-3">
-    <h5>Key Features</h5>
-    <ul class="timeline-points">
-      <li>Verified users & OTP check-ins</li>
-      <li>SOS & emergency helpers</li>
-      <li>Ratings & reviews for safe meetups</li>
-    </ul>
-  </div>
-
-  <!-- Mission Box -->
-  <div class="product-box pop-out" style="background: linear-gradient(135deg, #f7971e, #5a4c11);">
-    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=400&q=80" alt="Mission" class="timeline-img mb-3">
-    <h5>Mission</h5>
-    <p>To make city exploration safe and exciting when shared with others.</p>
-  </div>
-</div>
-
-
-      <!-- Founders Section -->
-    <div class="row mt-5 g-4">
-  <!-- Founder -->
-  <div class="col-md-6">
-    <div class="flex-block founder-card text-center">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Priyanshu Chandra" class="timeline-img mb-3 founder-img">
-      <h5 class="founder-name">Priyanshu Chandra</h5>
-      <p><strong>Founder & CEO</strong></p>
-      <p>Building people-first experiences combining healthcare perspective with tech innovation. Experienced in creating scalable digital solutions focused on social impact and user trust.</p>
+    <!-- About / Features / Mission -->
+    <div class="product-info-grid container">
+      <div class="product-box flex-block">
+        <img src="assets/img/zengie app.jpeg" alt="About">
+        <h5>About Gengies</h5>
+        <p>Gengies is a mobile-first social exploration app to discover local spots with verified companions — safe, social, and memorable.</p>
+      </div>
+      <div class="product-box flex-block">
+        <img src="assets/img/henry-perks-BJXAxQ1L7dI-unsplash.jpg" alt="Features">
+        <h5>Key Features</h5>
+        <ul>
+          <li>Verified users & OTP check-ins</li>
+          <li>SOS & emergency helpers</li>
+          <li>Ratings & reviews for safe meetups</li>
+        </ul>
+      </div>
+      <div class="product-box flex-block">
+        <img src="assets/img/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="Mission">
+        <h5>Mission</h5>
+        <p>To make city exploration safe and exciting when shared with others.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Co-Founder -->
-  <div class="col-md-6">
-    <div class="flex-block founder-card text-center delay-1 "style="background: linear-gradient(135deg, #f7971e, #ffd200);">
-      <img src="assets/img/co-founder.png.jpeg" alt="Allokik Gupta"  class="timeline-img mb-3 founder-img">
-      <h5 class="founder-name">Allokik Gupta</h5>
-      <p><strong>Co-Founder & COO</strong></p>
-      <p>Operations, strategy & growth — turning vision into action .Expert in scaling products, enhancing user experience, and building reliable teams. Passionate about strategy and business development.</p>
-    </div>
   </div>
-</div>
+</main>
 
-    </div>
-  </main>
+
 
   <footer class="py-4 bg-dark text-light">
     <div class="container d-md-flex justify-content-between align-items-center">
