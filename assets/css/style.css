@@ -149,6 +149,9 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
   margin-top: 15px;
   animation: heroFade 1.8s ease-in-out infinite alternate;
 }
+.hero .container h1,.hero .container p {
+  z-index: 2;
+}
 .hero .bg-shape {
   position: absolute;
   opacity: 0.8;
