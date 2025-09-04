@@ -68,13 +68,14 @@
   gap: 30px;
   margin-top: 35px;
 }
+/* .product-info-grid p{
+  font-weight: 700;
+} */
 
 /* Product Box */
 .product-box {
-  background: #fff;
   padding: 30px 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   text-align: center;
   transition: all 0.4s ease;
   position: relative;
@@ -84,7 +85,6 @@
 /* Hover Effect */
 .product-box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 /* Icons / Images */
 .product-box img {
@@ -105,7 +105,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color:white;
+  color:#0ea5a3;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -118,11 +118,6 @@
 .product-box ul li {
   position: relative;
   padding-left: 20px;
-}
-.pop-out:hover {
-  transform: translateY(-20px) scale(1.1); 
-  z-index: 10;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
 }
 .product-info-grid .product-box:hover {
   transform: translateY(-30px) scale(1.12);
