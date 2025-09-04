@@ -19,6 +19,19 @@
 .app-logo:hover {
   transform: scale(1.05) rotate(2deg);
 }
+@media (max-width: 576px) {
+  .gengies-header {
+    flex-direction: column; /* mobile me vertical stack */
+    gap: 10px;
+  }
+  .app-logo {
+    height: 120px;
+    width: 120px;
+  }
+    .founders-title {
+    font-size: 1.3rem;
+  }
+}
 .founders-section .section-title {
   font-size: 2.4rem;
   margin-bottom: 40px;
