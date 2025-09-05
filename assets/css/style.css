@@ -214,10 +214,18 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
 /* HERO */
 .timeline-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr; 
   gap: 20px;
   justify-items: center; 
 }
+
+/* Tablet & Desktop (768px aur upar) - 3 columns */
+@media (min-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
 .timeline-grid .flex-block:nth-child(odd) {
   background: linear-gradient(135deg, #16a34a, #22c55e); 
 }
