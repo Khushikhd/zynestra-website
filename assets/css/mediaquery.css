@@ -73,11 +73,7 @@
     grid-template-columns: 1fr; /* Mobile = 1 column */
   }
 }
-@media (min-width: 769px) {
-  .timeline-grid {
-    grid-template-columns: repeat(3, 1fr); /* Desktop = 3 column */
-  }
-}
+
 
   .app-image-wrapper {
     max-width: 80%;

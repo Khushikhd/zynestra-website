@@ -219,9 +219,9 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
 }
 .timeline-grid {
   display: grid;
-  grid-template-columns: 1fr;   /* Default → Mobile: 1 column */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  justify-items: stretch;       /* Column ke andar full stretch */
+  justify-items: center; 
 }
 .timeline-grid .flex-block:nth-child(odd) {
   background: linear-gradient(135deg, #16a34a, #22c55e); 
