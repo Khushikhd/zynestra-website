@@ -56,6 +56,32 @@
   gap: 40px; /* card ke beech space */
   align-items: center;
 }
+.hero-section {
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #ff4d4d, #b30000); /* red gradient */
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hero-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.hero-tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
 
 /* Founder Card Styling */
 .founder-card {
