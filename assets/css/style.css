@@ -212,19 +212,6 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
 .hero .shape2 { bottom: 5%; right: -10%; width: 280px; animation: float 18s infinite ease-in-out; }
 .hero .shape3 { top: 45%; right: 20%; width: 200px; animation: float 15s infinite ease-in-out; }
 /* HERO */
-.timeline-grid {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Desktop only: 3 column */
-@media (min-width: 1024px) {
-  .timeline-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-}
 .timeline-grid .flex-block:nth-child(odd) {
   background: linear-gradient(135deg, #16a34a, #22c55e); 
 }
@@ -362,6 +349,10 @@ h2.section-title::after {
   transition: all 0.3s ease;
 }
 .btn-glow:hover {box-shadow:0 0 30px rgba(14,165,163,0.9); transform:translateY(-3px);}
+.timeline-grid {
+  gap: 20px;
+  justify-items: center; 
+}
 .feature-card {
   overflow:hidden; border-radius:12px; background:#fff;
   box-shadow:0 8px 25px rgba(0,0,0,0.08);
