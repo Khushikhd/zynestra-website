@@ -68,7 +68,7 @@
     flex-direction: column-reverse;
     text-align: center; 
   }
- @media (max-width: 768px) {
+ @media (min-width: 768px) {
   .timeline-grid {
     grid-template-columns: (3,1fr); /* Mobile = 1 column */
   }
