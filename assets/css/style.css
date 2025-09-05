@@ -282,20 +282,6 @@ h2.section-title::after {
   color: #fff;
   font-weight: 600;
 }
-@media (max-width: 768px) {
-  .timeline-grid {
-    display: flex;
-    gap: 15px;
-  }
-
-  .flex-block {
-    flex: 0 0 auto;     /* Auto adjust kare */
-    width: auto;        /* Fixed width ki jagah auto */
-    min-width: 260px;   /* Thoda minimum rakho taki readable ho */
-    max-width: 80%;     /* Screen ke hisaab se adjust hoga */
-    scroll-snap-align: start;
-  }
-}
 .flex-block:hover {
   transform: translateY(-6px) scale(1.05);
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
