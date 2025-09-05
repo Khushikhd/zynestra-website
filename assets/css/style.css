@@ -50,6 +50,29 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.product-info-grid {
+  display: flex;
+  flex-direction: column; /* sab vertical stack hote rahenge */
+  gap: 40px; /* card ke beech space */
+  align-items: center;
+}
+
+/* Founder Card Styling */
+.founder-card {
+  max-width: 700px; /* thoda readable width */
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Paragraph line spacing */
+.founder-card p {
+  margin-bottom: 15px; /* paragraphs ke beech gap */
+  line-height: 1.8;     /* line spacing */
+}
 .role {
   font-size: 1rem;
   font-weight: 600;
