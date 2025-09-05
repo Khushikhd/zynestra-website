@@ -214,7 +214,7 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
 /* HERO */
 .timeline-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(3px, 1fr));
   gap: 20px;
   justify-items: center; 
 }
@@ -281,6 +281,20 @@ h2.section-title::after {
   background: linear-gradient(135deg, #0ea5a3, #22d3ee);
   color: #fff;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .timeline-grid {
+    display: flex;
+    gap: 15px;
+  }
+
+  .flex-block {
+    flex: 0 0 auto;     /* Auto adjust kare */
+    width: auto;        /* Fixed width ki jagah auto */
+    min-width: 260px;   /* Thoda minimum rakho taki readable ho */
+    max-width: 80%;     /* Screen ke hisaab se adjust hoga */
+    scroll-snap-align: start;
+  }
 }
 .flex-block:hover {
   transform: translateY(-6px) scale(1.05);
