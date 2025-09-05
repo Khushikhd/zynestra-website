@@ -28,6 +28,11 @@
     font-weight: 600;
   }
 }
+@media (max-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: 1fr; 
+  }
+}
 @media (max-width: 575px) {
   .app-logo {
     height: 120px;
