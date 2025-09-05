@@ -68,13 +68,6 @@
     flex-direction: column-reverse;
     text-align: center; 
   }
- @media (min-width: 768px) {
-  .timeline-grid {
-    grid-template-columns: repeat(3,1fr); /* Mobile = 1 column */
-  }
-}
-
-
   .app-image-wrapper {
     max-width: 80%;
     margin: 0 auto 20px auto;
