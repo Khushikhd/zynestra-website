@@ -220,7 +220,7 @@ section:nth-child(3), .timeline-box:nth-child(3), .feature-card:nth-child(3), .p
 }
 
 /* Tablet & Desktop (768px aur upar) - 3 columns */
-@media (min-width: 769px) {
+@media (min-width: 800px) {
   .timeline-grid {
     grid-template-columns: repeat(3, 1fr); 
   }
