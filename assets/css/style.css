@@ -353,18 +353,6 @@ h2.section-title::after {
   gap: 20px;
   justify-items: center; 
 }
-.feature-card {
-  overflow:hidden; border-radius:12px; background:#fff;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-}
-.feature-card .feature-img {
-  height:225px; overflow:hidden; border-radius:12px 12px 0 0;
-}
-.feature-card .feature-img img {
-  width:100%; height:100%; object-fit:cover;
-  transition:transform 0.5s;
-}
-.feature-card:hover .feature-img img {transform:scale(1.1);}
 /* ANIMATIONS */
 .anim-fade-up {opacity:0; transform:translateY(20px); animation:fadeUp .8s forwards;}
 .anim-fade-left {opacity:0; transform:translateX(-20px); animation:fadeLeft .8s forwards;}
@@ -381,6 +369,18 @@ h2.section-title::after {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 /* Section styling */
+.feature-card {
+  overflow:hidden; border-radius:12px; background:#fff;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+.feature-card .feature-img {
+  height:225px; overflow:hidden; border-radius:12px 12px 0 0;
+}
+.feature-card .feature-img img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 0.5s;
+}
+.feature-card:hover .feature-img img {transform:scale(1.1);}
 .journey-section {
   padding: 60px 20px;
   text-align: center;
