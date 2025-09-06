@@ -286,6 +286,7 @@ h2.section-title::after {
   transform: translateY(-6px) scale(1.05);
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
+.flex-block ul li {text-align: left;}
 .milestone {
   background: linear-gradient(135deg, #16a34a, #22c55e);
 }
